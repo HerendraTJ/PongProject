@@ -16,8 +16,15 @@ struct Player{
 		void setY(int a){
 			y=a;
 		}
-		
-	
-	
-	
+		void drawPlayer(int y,x){
+			mvaddch(y+2,x,'|');
+			mvaddch(y+1,x,'|');
+			mvaddch(y,x,'|');
+			mvaddch(y-1,x,'|');
+			mvaddch(y-2,x,'|');
+		}
+		private:
+			int x,y,height
 };
+#endif
+
