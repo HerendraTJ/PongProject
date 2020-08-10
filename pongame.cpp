@@ -45,6 +45,17 @@ player2Points=0;
 void input(){
 ch=getch();
 switch(ch){
+case KEY_UP:
+    if (player2.getY()!=3){
+        player2.setY(player2.getY()-1)
+    }
+    break;
+case KEY_DOWN:
+    if(player2.getY!= height - 4){
+        player2.setX(player2.getX()-1);
+    }
+    break;
+case KEY_LEFT:
 
 
 
