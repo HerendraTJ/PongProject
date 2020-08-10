@@ -10,8 +10,9 @@ int dir=1;
 int player1Points,player2Points=0;
 bool quit;
 char wallTexture,playerTexture;
+bool player1Server,player2Serve=false;
 
-
+Player player1
 
 int main(){
 
