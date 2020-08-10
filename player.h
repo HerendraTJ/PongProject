@@ -2,9 +2,9 @@
 #define PONG_PLAYER_H
 #include <ncurse.h>
 
-struct Player{
-	
-	
+class Player{
+
+
 	public:
 		Player(int x,int y);
 		int getX() {return x;}
