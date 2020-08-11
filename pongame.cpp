@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <ncurses.h>
-#include <player.h>
-#include <ball.h>
+#include "player.h"
+#include "ball.h"
 #include <conio.h>
 
 
