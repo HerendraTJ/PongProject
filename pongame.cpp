@@ -13,8 +13,10 @@ int player1Points,player2Points=0;
 bool quit;
 char wallTexture,playerTexture;
 bool player1Server,player2Serve=false;
+int height;
 
-Player player1
+
+Player player1;
 
 int main(){
 setup();
@@ -51,7 +53,7 @@ case KEY_UP:
     }
     break;
 case KEY_DOWN:
-    if(player2.getY!= height - 4){
+    if(player2.getY()!= height - 4){
         player2.setX(player2.getX()-1);
     }
     break;
