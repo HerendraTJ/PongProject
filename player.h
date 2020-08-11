@@ -1,6 +1,6 @@
 #ifndef PONG_PLAYER_H
 #define PONG_PLAYER_H
-#include <ncurse.h>
+#include <ncurses.h>
 
 class Player{
 
