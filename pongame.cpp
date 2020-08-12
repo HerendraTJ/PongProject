@@ -74,17 +74,36 @@ case 'w':
     }
     break;
 case 's':
+    if(player1.getY()!=height-4){
+        player1.setY(player1.getY()+1);
+    }
+    break;
+case 'a':
+    if(player1.getX()!=2){
+        player1.setX(player1.getX()-1);
+    }
+    break;
+case 'd':
+    if(player1.getX()!=width/2-4){
+        player1.setX(player1.getX()+1);
+    }
+    break;
+case ' ':
+    if(player1Serve){
+        player1Serve=false;
+        dir=1;
 
-
-
+    }
+    else if(player2Serve){
+        player2Serve=false;
+        dir=2;
+    }
+    break;
+case'q':
+    quit=true;
+    break;
 
 }
-
-
-
-
-
-
 }
 
 return 0;
