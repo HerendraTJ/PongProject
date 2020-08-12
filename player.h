@@ -26,5 +26,8 @@ class Player{
 		private:
 			int x,y,height
 };
+
+
+
 #endif
 
