@@ -16,7 +16,8 @@ bool player1Server,player2Serve=false;
 int height;
 
 
-Player player1;
+Player player1(heigth/2,2);
+Player player2(height/2,width-3);
 
 int main(){
 setup();
@@ -58,7 +59,21 @@ case KEY_DOWN:
     }
     break;
 case KEY_LEFT:
-
+    if(player2.getX()!=width/2+4){
+        player2.setX(player2.getX()-1);
+    }
+    break;
+case KEY_RIGHT:
+    if(player2.getX()!=width-3){
+        player2.setX(player2.getX()+1);
+    }
+    break;
+case 'w':
+    if(player1.getY()!=3){
+        player1.setY(player.getY()-1);
+    }
+    break;
+case 's':
 
 
 
