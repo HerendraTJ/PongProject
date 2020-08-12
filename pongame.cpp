@@ -6,18 +6,18 @@
 
 
 int ch;
-int panjang=80;
-int lebar=24;
+int height=80;
+int width=24;
 int dir=1;
 int player1Points,player2Points=0;
 bool quit;
 char wallTexture,playerTexture;
-bool player1Server,player2Serve=false;
+bool player1Serve,player2Serve=false;
 int height;
 
 
 Player player1(heigth/2,2);
-Player player2(height/2,width-3);
+Player player2(heigth/2,width-3);
 
 int main(){
 setup();
@@ -50,7 +50,7 @@ ch=getch();
 switch(ch){
 case KEY_UP:
     if (player2.getY()!=3){
-        player2.setY(player2.getY()-1)
+        player2.setY(player2.getY()-1);
     }
     break;
 case KEY_DOWN:
@@ -70,7 +70,7 @@ case KEY_RIGHT:
     break;
 case 'w':
     if(player1.getY()!=3){
-        player1.setY(player.getY()-1);
+        player1.setY(player1.getY()-1);
     }
     break;
 case 's':
@@ -99,7 +99,7 @@ case ' ':
         dir=2;
     }
     break;
-case'q':
+case 'q':
     quit=true;
     break;
 
