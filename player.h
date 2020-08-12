@@ -16,7 +16,7 @@ class Player{
 		void setY(int a){
 			y=a;
 		}
-		void drawPlayer(int y,x){
+		void drawPlayer(int y,int x){
 			mvaddch(y+2,x,'|');
 			mvaddch(y+1,x,'|');
 			mvaddch(y,x,'|');
@@ -24,7 +24,7 @@ class Player{
 			mvaddch(y-2,x,'|');
 		}
 		private:
-			int x,y,height
+			int x,y,height;
 };
 
 
